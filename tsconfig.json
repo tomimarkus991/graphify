@@ -1,0 +1,15 @@
+{
+  "extends": "eslint-config-redlotus-base/rules/tsconfig.json",
+  "include": [
+    "src",
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.d.ts"
+  ],
+  "compilerOptions": {
+    "baseUrl": "src"
+  }
+}
