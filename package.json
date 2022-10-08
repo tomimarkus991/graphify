@@ -60,7 +60,7 @@
     "typescript": "^4.8.4"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,graphql}": "yarn prettier",
+    "*.{js,jsx,ts,tsx,md,graphql,a}": "yarn prettier",
     "*.{js,jsx,ts,tsx,md,graphql}": "yarn lint:fix"
   }
 }
