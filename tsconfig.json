@@ -1,5 +1,5 @@
 {
-  "extends": "eslint-config-redlotus-base/rules/tsconfig.json",
+  "extends": "@redlotus/typescript-config/base/tsconfig.json",
   "include": [
     "src",
     "**/*.ts"

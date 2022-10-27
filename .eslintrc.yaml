@@ -1,2 +1,2 @@
 extends:
-  - eslint-config-redlotus-base/main
+  - eslint-config-redlotus-base/dist/main

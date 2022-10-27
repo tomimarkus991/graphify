@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/order
 import * as dotenv from "dotenv";
 
 dotenv.config();
@@ -31,7 +30,9 @@ const startApolloServer = async () => {
   server.applyMiddleware({ app });
 
   httpServer.listen({ port: process.env.PORT }, () => {
-    console.log(`🚀 Server ready at http://localhost:${process.env.PORT}${server.graphqlPath}`);
+    console.log(
+      `🚀 Server ready at http://localhost:${process.env.PORT}${server.graphqlPath}`
+    );
   });
 };
 
