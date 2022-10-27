@@ -2,9 +2,7 @@
 /src/generated/graphql.ts
 
 /build
+/dist
 /coverage
 /node_modules
-/*.json
-/*.yaml
 /*env*
-/.*
