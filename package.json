@@ -24,11 +24,11 @@
     "pg": "^8.8.0"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "2.13.7",
-    "@graphql-codegen/introspection": "2.2.1",
-    "@graphql-codegen/typescript": "2.8.0",
-    "@graphql-codegen/typescript-document-nodes": "2.3.5",
-    "@graphql-codegen/typescript-resolvers": "2.7.5",
+    "@graphql-codegen/cli": "2.16.3",
+    "@graphql-codegen/introspection": "2.2.3",
+    "@graphql-codegen/typescript": "2.8.7",
+    "@graphql-codegen/typescript-document-nodes": "2.3.12",
+    "@graphql-codegen/typescript-resolvers": "2.7.12",
     "@graphql-tools/graphql-file-loader": "^7.5.5",
     "@graphql-tools/load": "^7.8.0",
     "@graphql-tools/schema": "^9.0.4",
