@@ -10,6 +10,9 @@
     "**/*.d.ts"
   ],
   "compilerOptions": {
-    "baseUrl": "src"
+    "baseUrl": "src",
+    "outDir": "dist",
+    "target": "ES5",
+    "module": "CommonJS",
   }
 }

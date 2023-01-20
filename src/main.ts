@@ -10,9 +10,10 @@ import {
   ApolloServerPluginLandingPageLocalDefault,
 } from "apollo-server-core";
 import { ApolloServer } from "apollo-server-express";
-import express from "express";
+import cors from "cors";
+import express, { Request } from "express";
 
-import { getSchema } from "utils";
+import { getSchema, verifyJWT } from "utils";
 
 const startApolloServer = async () => {
   const app = express();
@@ -26,9 +27,15 @@ const startApolloServer = async () => {
       ApolloServerPluginDrainHttpServer({ httpServer }),
       ApolloServerPluginLandingPageLocalDefault({ embed: true }),
     ],
+    context: ({ req }: { req: Request }) => {
+      const hasAccess = verifyJWT(req.headers.authorization || "");
+      return { hasAccess };
+    },
   });
+  app.use(cors());
   await server.start();
-  server.applyMiddleware({ app });
+
+  server.applyMiddleware({ app, path: "/api" });
 
   httpServer.listen({ port: process.env.PORT }, () => {
     console.log(`🚀 Server ready at http://localhost:${process.env.PORT}${server.graphqlPath}`);

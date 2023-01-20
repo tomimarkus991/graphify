@@ -18,6 +18,6 @@ RUN yarn build
 ENV NODE_ENV production
 
 EXPOSE 8080
-CMD [ "node", "dist/main.js" ]
+CMD yarn start
 
 USER node
