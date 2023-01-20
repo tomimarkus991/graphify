@@ -1,8 +1,7 @@
 {
-  "name": "unisub-server",
+  "name": "graphify-server",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "0.0.1",
   "scripts": {
     "dev": "concurrently \"yarn gen-watch\" \"yarn start:dev\"",
     "start:dev": "ts-node-dev -r tsconfig-paths/register src/main.ts",
