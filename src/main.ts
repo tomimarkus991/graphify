@@ -12,7 +12,7 @@ import { ApolloServer } from "apollo-server-express";
 import cors from "cors";
 import express, { Request } from "express";
 
-import { getSchema, verifyJWT } from "utils";
+import { getSchema, verifyJWT } from "./utils";
 
 const startApolloServer = async () => {
   const app = express();
